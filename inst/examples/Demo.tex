@@ -1,0 +1,21 @@
+%latex.default(cstats, title = title, caption = caption, rowlabel = rowlabel,     col.just = col.just, numeric.dollar = FALSE, insert.bottom = legend,     rowname = lab, dcolumn = dcolumn, extracolheads = extracolheads,     extracolsize = Nsize, ...)%
+\begin{table}[!h]
+{\small
+\caption{Descriptive Statistics by treatment\label{Demo}} 
+\begin{center}
+\begin{tabular}{lccc}
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{No}&\multicolumn{1}{c}{Yes}&\multicolumn{1}{c}{Test Statistic}\tabularnewline
+&\multicolumn{1}{c}{{\scriptsize $N=50$}}&\multicolumn{1}{c}{{\scriptsize $N=50$}}&\tabularnewline
+\hline
+age&{\scriptsize  9.257589~}{10.018343 }{\scriptsize 10.944154} &{\scriptsize  9.296508~}{10.189856 }{\scriptsize 11.140469} &$ F_{1,98}=0.05 ,~ P=0.827 ^{1} $\tabularnewline
+gender~:~Male&~~0\%~{\scriptsize~(~0)}&100\%~{\scriptsize~(50)}&$ \chi^{2}_{1}=100 ,~ P<0.001 ^{2} $\tabularnewline
+race~:~Black&~0\%~{\scriptsize~(~0)}&50\%~{\scriptsize~(25)}&$ \chi^{2}_{3}=100 ,~ P<0.001 ^{2} $\tabularnewline
+~~~~Hispanic&~0\%~{\scriptsize~(~0)}&50\%~{\scriptsize~(25)}&\tabularnewline
+~~~~Other&50\%~{\scriptsize~(25)}&~0\%~{\scriptsize~(~0)}&\tabularnewline
+~~~~White&50\%~{\scriptsize~(25)}&~0\%~{\scriptsize~(~0)}&\tabularnewline
+qolScore&{\scriptsize 61.87878~}{67.28704 }{\scriptsize 73.08149} &{\scriptsize 62.25988~}{69.23240 }{\scriptsize 75.52094} &$ F_{1,98}=0.14 ,~ P=0.707 ^{1} $\tabularnewline
+\hline
+\end{tabular}\end{center}}
+
+\noindent {\scriptsize $a$\ }{$b$\ }{\scriptsize $c$\ } represent the lower quartile $a$, the median $b$, and the upper quartile $c$\ for continuous variables.Numbers after percents are frequencies.\indent Tests used:\textsuperscript{\normalfont 1}Wilcoxon test; \textsuperscript{\normalfont 2}Pearson test\end{table}
